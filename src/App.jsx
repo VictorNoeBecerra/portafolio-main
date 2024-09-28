@@ -1,10 +1,17 @@
 // src/App.jsx
-import Home from './components/Home';
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div>
-      <Home />
+    <div className="flex flex-col h-screen w-screen">
+      <section className="flex-grow">
+        <Home />
+      </section>
+      
+      {/* Footer */}
+      <footer className="h-16 bg-stone-300 text-center text-gray-600 flex items-center justify-center">
+        © 2024 Mi Portafolio Personal
+      </footer>
     </div>
   );
 }
